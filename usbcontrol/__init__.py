@@ -59,7 +59,7 @@ class UsbcontrolPlugin(octoprint.plugin.SettingsPlugin,
 		return dict(usb2=["arg2"],usb3=["arg3"],usb4=["arg4"],usb5=["arg5"],all=["argAll"],save=["init"])
 
 	def on_api_command(self, command, data):
-		uhubctlFolder =                         "/home/pi/oprint/lib/python2.7/site-packages/usbcontrol/bin"
+		uhubctlFolder =                         "/home/pi/oprint/lib/python3.7/site-packages/usbcontrol/bin"
 		#uhubctlFolder =                         "/home/pi/OctoPrint-USBControl/usbcontrol/bin"
 		if command == "save":
 			self._logger.info("save init in settings")
